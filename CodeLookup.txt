@@ -1,0 +1,5 @@
+200: OK,
+1: Bad Email,
+2: Bad Password,
+11000: Duplicate Failure,
+3: Invalid login Credentials

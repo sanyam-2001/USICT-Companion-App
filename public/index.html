@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./Materialize/materialize.min.css">
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <nav>
+        <div class='flexbox'>
+            <div class="head black-text valign-wrapper">
+                <img src="./Images/logo.png" class="navlogo" alt="Logo">
+                USICT <span class="sub">Companion
+
+                </span>
+            </div>
+        </div>
+
+    </nav>
+    <div class="login-panel">
+        <div class="heading">
+            <div class="title">WELCOME</div>
+            <div class="subtitle">To your Account</div>
+        </div>
+    </div>
+
+    <div class="inputGroups">
+
+        <div class="userImage center-align" style="margin-top: 20px;">
+            <img src="./Images/user.png" style="width: 50px;" alt="User" class="reponsive-img">
+        </div>
+        <div class="input-field">
+            <input id="enrollmentNumber" type="text" class="validate">
+            <label for="enrollmentNumber">Enrollment Number</label>
+            <span class="helper-text" data-error="Enrollment Number Not Found!" data-success=""></span>
+
+        </div>
+        <div class="input-field">
+            <input id="password" type="password" class="validate">
+            <label for="password">Password</label>
+            <span class="helper-text" data-error="Incorrect Password" data-success=""></span>
+
+        </div>
+        <div class="input-field left-align">
+            <div>
+                <label>
+                    <input type="checkbox" id="showPassword" />
+                    <span>Show Password</span>
+                </label>
+            </div>
+        </div>
+        <div class="input-field" style="display:flex; justify-content: space-around;">
+            <button class="btn waves-effect waves-light red lighten-3 black-text" id="login-btn">Login
+                <i class="material-icons right">send</i>
+            </button>
+            <button class="btn waves-effect waves-light" id="signToggle">Sign-Up
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+
+
+    </div>
+
+    <div class="loader">
+        <div class="progress">
+            <div class="indeterminate"></div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="./jquery.js"></script>
+    <script src="./Materialize/materialize.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

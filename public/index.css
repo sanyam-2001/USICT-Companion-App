@@ -1,0 +1,91 @@
+/* #ee6e73: Red Theme */
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+*{
+    box-sizing: border-box;
+}
+.login-panel{
+    margin:auto;
+    text-align:center;
+    padding: 70px;
+}
+.title, .subtitle, .validate, .head{
+    font-family: 'Kiwi Maru', serif;
+    letter-spacing:2px
+}
+.head{
+    font-weight: 700;
+    font-size:20px
+}
+.sub{
+    font-size:15px
+}
+.title{
+    font-size:60px;
+    color: #ef9a9a;
+}
+.subtitle{
+    font-size:20px
+}
+.inputGroups{
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform:translate(-50%, -50%);
+    width:60%;
+}
+.input-field{
+    width:50%;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;;
+}
+.btn{
+    width:40%;
+}
+.flexbox{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:85%;
+    margin:auto
+}
+.navlogo{
+    width: 50px; margin-right: 10px;
+}
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;;
+    background-color: #e2e2e29c;
+    display: none;
+}
+.progress{
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%)
+
+}
+
+@media only screen and (max-width: 768px){
+	.input-field{
+        width:70%   
+    }
+    .title{
+        font-size:50px
+    }
+    .btn{
+        width:70%
+    }
+    .head{
+        font-size:14px
+    }
+    .navlogo{
+        width:30px
+    }
+
+}

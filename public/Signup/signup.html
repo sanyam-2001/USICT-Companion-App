@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../Materialize/materialize.min.css">
+    <link rel="shortcut icon" href="../Images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./signup.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class='flexbox'>
+            <div class="head black-text valign-wrapper">
+                <img src="../Images/logo.png" class="navlogo" alt="Logo">
+                USICT <span class="sub">Companion
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!-- Panel -->
+    <div class="login-panel">
+        <div class="heading">
+            <div class="title">CREATE</div>
+            <div class="subtitle">A New Account</div>
+        </div>
+    </div>
+
+    <div class="inputContainer">
+        <div class="inputGroups">
+            <!--  -->
+            <div class="input-field">
+                <input id="enrollmentNumber" type="text" class="validate">
+                <label for="enrollmentNumber">Enrollment Number</label>
+                <span class="helper-text" data-error="Enrollment Number Already Taken" data-success=""></span>
+            </div>
+            <!--  -->
+            <div class="input-field">
+                <input id="name" type="text">
+                <label for="name">Full Name</label>
+                <span class="helper-text"></span>
+            </div>
+            <!--  -->
+            <div class="input-field">
+                <input id="email" type="text" class="validate">
+                <label for="email">E-Mail</label>
+                <span class="helper-text" data-error="Invalid E-Mail" data-success=""></span>
+
+            </div>
+            <!--  -->
+            <div class="input-field">
+                <select id="branch" class="validate">
+                    <option value="" disabled selected>Choose Your Branch</option>
+                    <option value="CSE">Computer Science (CSE)</option>
+                    <option value="IT">Information Technology (IT)</option>
+                    <option value="ECE">Electrical and Communication (ECE)</option>
+                </select>
+                <label for="branch">Branch</label>
+            </div>
+
+            <div class="double">
+                <!--  -->
+                <div class="input-field half">
+                    <input id="year" type="number" class="validate">
+                    <label for="year">Year of Study</label>
+                    <span class="helper-text">Current Year of Study(1-4)</span>
+                </div>
+                <!--  -->
+                <div class="input-field half">
+                    <input id="sem" type="number" class="validate">
+                    <label for="sem">Current Semester</label>
+                    <span class="helper-text">Current Semester(1-8)</span>
+                </div>
+            </div>
+            <!--  -->
+            <div class="input-field">
+                <input id="password" type="password" class="validate">
+                <label for="password">Password</label>
+                <span class="helper-text" data-error="Invalid Password" data-success=""></span>
+            </div>
+            <!--  -->
+            <div class="input-field left-align">
+                <div>
+                    <label>
+                        <input type="checkbox" id="showPassword" />
+                        <span>Show Password</span>
+                    </label>
+                </div>
+            </div>
+            <!--  -->
+            <div class="input-field" style="display:flex; justify-content: space-around;">
+                <button class="btn waves-effect waves-light red lighten-3 black-text" id="signup-btn">Sign-Up
+                    <i class="material-icons right">send</i>
+                </button>
+                <button class="btn waves-effect waves-light" id="signToggle">Login
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div style="height: 100px;"></div>
+
+    <div class="loader">
+        <div class="progress">
+            <div class="indeterminate"></div>
+        </div>
+
+    </div>
+
+
+
+    <script src="../jquery.js"></script>
+    <script src="../Materialize/materialize.min.js"></script>
+    <script src="./signup.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('select').formSelect();
+            // Old way
+            // $('select').material_select();
+        });
+    </script>
+</body>
+
+</html>
